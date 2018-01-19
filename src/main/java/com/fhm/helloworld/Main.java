@@ -13,13 +13,17 @@ public class Main {
     public static void main(String args[]){
         
         
-        Greeting greeting = new GreetingGerman();
-        
-        
+        GreetingFactory factory = new GreetingFactory();
+        Greeting greeting = factory.createGreeting(LanguageType.GERMAN);      
         System.out.println(greeting.message());
         
-        greeting = new GreetingItalian();        
+        greeting = factory.createGreeting(LanguageType.FRENCH);      
         System.out.println(greeting.message());
+        
+        
+        greeting = factory.createGreeting(LanguageType.ITALIAN);      
+        System.out.println(greeting.message());
+        
         
     }
 }
