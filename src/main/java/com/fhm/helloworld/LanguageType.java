@@ -14,6 +14,7 @@ public enum LanguageType {
     GERMAN
     ,FRENCH
     ,ITALIAN
+    ,SPANISH
     ;
     
 }
