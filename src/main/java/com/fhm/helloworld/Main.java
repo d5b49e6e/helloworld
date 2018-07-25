@@ -24,6 +24,9 @@ public class Main {
         greeting = factory.createGreeting(LanguageType.ITALIAN);      
         System.out.println(greeting.message());
         
+        greeting = factory.createGreeting(LanguageType.SPANISH);      
+        System.out.println(greeting.message());
+        
         
     }
 }
