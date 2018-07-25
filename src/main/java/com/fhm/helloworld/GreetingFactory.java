@@ -20,6 +20,8 @@ public class GreetingFactory {
                 return new GreetingGerman();
             if(type==LanguageType.ITALIAN)
                 return new GreetingItalian();
+            if(type==LanguageType.SPANISH)
+                return new GreetingSpanish();
             return null;
         }
 }
